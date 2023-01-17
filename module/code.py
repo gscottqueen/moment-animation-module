@@ -11,11 +11,11 @@ from adafruit_matrixportal.matrix import Matrix
 from adafruit_debouncer import Debouncer
 
 SPRITESHEET_FOLDER = "/bmps"
-FILENAME = "/breathe_dark_64_clean.bmp"
+FILENAME = "/breathe-dark-two.bmp"
 DEFAULT_FRAME_DURATION = 0.20  # 100ms
 
 # --- Display setup ---
-matrix = Matrix(width=64, height=64, bit_depth=3, tile_rows=2, serpentine=True,)
+matrix = Matrix(width=64, height=64, bit_depth=2, tile_rows=2, rotation=90, serpentine=True)
 sprite_group = displayio.Group()
 matrix.display.show(sprite_group)
 
